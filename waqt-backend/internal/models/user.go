@@ -17,7 +17,7 @@ type User struct {
 	Password       string `json:"-" gorm:"not null"`
 	FirstName      string `json:"first_name"`
 	LastName       string `json:"last_name"`
-	ProfilePicture string `json:"profile_pciture"`
+	ProfilePicture string `json:"profile_picture"`
 
 	// Relations
 	Tasks     []Task     `json:"tasks,omitempty" gorm:"foreignKey:UserID"`
